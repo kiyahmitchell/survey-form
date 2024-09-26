@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Customer Satisfaction Survey</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title" class="title"> Customer Satisfaction Survey</h1>
+            <p id="description" class="description">Thank you for choosing our product/service! We value your feedback and would like to hear your thoughts about your recent experience with us. This survey will only take a few minutes to complete.</p>
+        </header>
+        <form id="survey-form">
+            <div class="info">
+                <label id="name-label" for="name-label"> Name </label><br>
+                <input type="text" id="name" name="name" placeholder="Name" required><br>
+                <label id="email-label" for="email-label"> Email </label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <label id="number-label" for="number-label"> Age </label><br>
+                <input type="number" id="number" name="text" placeholder="Age" min="18" max="99" required> 
+            </div>
+            <div class="info-2">
+                <label>Which product/service did you use?</label>
+                <select id="dropdown">
+                    <option value=""> Choose One</option>
+                    <option value="marketing">Marketing Plan</option>
+                    <option value="education">Education Plan</option>
+                </select>  
+            </div>
+            <div class="info-3">
+                <label>Would you recommend us to a friend?</label>
+                <label> Yes </label>
+                <input type="radio" name="option" value="yes">
+                <label> No </label>
+                <input type="radio" name="option" value="no">
+                <label> Maybe </label>
+                <input type="radio" name="option" value="maybe">
+            </div>
+            <div class="info-4">
+                <label>What would you like to see improved?</label>
+                <label>Videos</label>
+                <input type="checkbox" value="videos">
+                <label>Community</label>
+                <input type="checkbox" value="community">
+                <label>Courses</label>
+                <input type="checkbox" value="courses">
+            </div>
+            <div class="info-5">
+                <label>Any Comments or Suggestions?</label>
+                <textarea> </textarea>
+                <input id="submit" type="submit"></button>   
+            </div>
+        </form>
+    </body>
+</html>
